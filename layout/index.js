@@ -1,9 +1,12 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import styles from "@/styles/Layout.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Showcase from "@/components/Showcase";
 
 export default function Layout({ children, title, description, keywords }) {
+  const router = useRouter();
   return (
     <div>
       <Head>
@@ -12,6 +15,7 @@ export default function Layout({ children, title, description, keywords }) {
         <meta name="keywords" content={keywords} />
       </Head>
       <Header />
+      {router.pathname === "/" && <Showcase />}
       <main className={styles.container}>{children}</main>
 
       <Footer />
