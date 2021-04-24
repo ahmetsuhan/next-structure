@@ -70,7 +70,7 @@ export default function AddEventPage() {
           </div>
 
           <div>
-            <label htmlFor="name">Event Performers</label>
+            <label htmlFor="performers">Event Performers</label>
             <input
               type="text"
               id="performers"
@@ -81,7 +81,7 @@ export default function AddEventPage() {
           </div>
 
           <div>
-            <label htmlFor="name">Event Venue</label>
+            <label htmlFor="venue">Event Venue</label>
             <input
               type="text"
               id="venue"
@@ -92,7 +92,7 @@ export default function AddEventPage() {
           </div>
 
           <div>
-            <label htmlFor="name">Event Address</label>
+            <label htmlFor="address">Event Address</label>
             <input
               type="text"
               id="address"
@@ -103,7 +103,7 @@ export default function AddEventPage() {
           </div>
 
           <div>
-            <label htmlFor="name">Event Date</label>
+            <label htmlFor="date">Event Date</label>
             <input
               type="date"
               id="date"
@@ -114,7 +114,7 @@ export default function AddEventPage() {
           </div>
 
           <div>
-            <label htmlFor="name">Event Time</label>
+            <label htmlFor="time">Event Time</label>
             <input
               type="text"
               id="time"
